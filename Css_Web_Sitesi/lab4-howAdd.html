@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uka Code</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "header">
+		<div class="headerbar">
+			<img id="uka" src="images/uka.png">
+		</div>
+		<div class="headerbar">
+			<ul>
+				<li class="navbutton"><a class="headbutton" href="lab4.html">Anasayfa</a></li>
+				<li class="navbutton"><a class="headbutton" href="lab4.html">CSS</a></li>
+				<li class="navbutton"><a class="headbutton" href="">Hakkında</a></li>
+			</ul>
+		</div>	
+	</div>
+	<div id="content">
+		<div class="main nav">
+			<h1 align="center">Css Konuları</h1>
+			<div class="issues" align="center">
+				<a class="issuesbutton"href="lab4-giris.html">CSS Giriş</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="lab4-ClassAndId.html">CSS ID ve Class</a>
+			</div>
+			<div class="issues choose" align="center">
+				<a class="issuesbutton choose" href="lab4-howAdd.html">CSS Nasıl Eklenir?</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">CSS Arkaplanlar(yakında)</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">CSS Yazılar(yakında)</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">Bağlantılar(yakında)</a>
+			</div>
+			
+		</div>
+		<div class="main content">
+			<h1>CSS Nasıl Eklenir?</h1>
+			<p>Bir tarayıcı açıldığı zaman stilleri okur ve o stilin kullanıldığı HTML elementlerini belirtilen özelliklere göre şekillendirir.</p>
+			<p>Üç şekilde sayfamıza stil ekleyebiliriz. Bunlar:</p>
+			<div>
+				<div class="ulblock">
+					<div class="ulpos">
+						<ul>
+							<li><a href="#stilcagir" class="pagelink">Stilleri CSS Dosyasından Çağırmak</a></li>
+							<li><a href="#htmlcagir" class="pagelink">HTML Sayfasında CSS Yazmak</li>
+							<li><a href="#elementcagir" class="pagelink">HTML Elementinin İçerisinde Stil Belirtmek</li>
+						</ul>
+					</div>
+				</div>
+				<h2><a name="stilcagir">1. Stilleri CSS Dosyasından Çağırmak</a></h2>
+				<p>Öncelikle bir not defteri ya da CSS düzenleyici program açmalısınız.</p>
+				<p>CSS Kodlarınızı CSS Kod Yapısı'na uygun olarak yazın ve kaydedin.</p>
+				<p>HTML Sayfanızı açıp <span><</span>head> ile <span><</span>/head> arasına aşağıdaki şekilde stil dosyanızın adını belirtin.</p>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<span><</span><span class="colorscode">link</span> <span>href = "stil.dosyasi.css"</span><span class="colorscode"> type</span>= "text/css"<span class="colorscode"> rel</span>= "stylesheet"/>
+						</div>	
+					</div>
+				</div>
+				<p>href="DOSYA_ADI" ile belirttiğimiz yerde bizim kaydettiğimiz dosyanın adı yer almalı ve HTML sayfası ile CSS dosyası aynı klasörde bulunmalıdır. Farklı bir klasörde kullanmak istiyorsak HTML sayfasına göre konumu yazmamız gereklidir.</p>
+				<p>Dosya adını doğru yazdıysak artık CSS dosyamızı HTML sayfamıza bağladık demektir. Yani CSS dosyamızdaki stilleri rahatlıkla HTML sayfamızda kullanabiliriz.</p>
+				<h2><a name="htmlcagir">2. HTML Sayfasında CSS Yazmak</a></h2>
+				<p>HTML sayfamızda HEAD elementlerinin arasında STYLE elementi kullanarak stiller yaratmamız mümkün. Aşağıdaki örneğe bakalım:</p>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<<span class="colorscode">html</span>><br>
+							<<span class="colorscode">head</span>><br>
+							<<span class="colorscode">title</span>>Sayfa Basligi<<span class="colorscode">/title</span>><br>
+							<<span class="colorscode">style</span> type="text/css"><br>
+							<span class="colorscode">body</span> { <span class="colorscode">background-color</span>:black;
+							<span class="colorscode">color</span>: white; }<br>
+							<span class="colorscode">p</span> { <span class="colorscode">font-family</span>: Tahoma, Verdana; 
+							<span class="colorscode">font-size</span>: 12px; }<br>
+							<<span class="colorscode">/style</span>><br>
+							<<span class="colorscode">/head</span>><br>
+							<<span class="colorscode">body</span>><br>
+							<<span class="colorscode">p</span>>Bu 12 piksel Tahoma yazı tipi ile yazıldı.<<span class="colorscode">/p</span>><br>
+							<<span class="colorscode">/body</span>><br>
+							<<span class="colorscode">/html</span>>
+
+						</div>	
+					</div>
+				</div>
+				<p>Örneğe baktığımızda <<span>style type="text/css"></span> elementini HEAD elementi içinde açıp kapatıyor ve içine stillerimizi yazıyoruz. Böylelikle dosyamızda belirttiğimiz stiller dışarıdan bir dosyaya bağlı olmaksızın kullanılabilir olacaklar.</p>
+				<h2><a name="elementcagir">3. HTML Elementinin İçerisinde Stil Belirtmek</a></h2>
+				<p>Bazen stil dosyası ya da STYLE elementi kullanmadan hızlı çözümler üretmek gerekebilir. Böyle durumlarda her elementin style="" özelliği kullanıma hazırdır. CSS kodlarını element içinde açacağımız STYLE özelliğine sıralarız. Örneğin;</p>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<<span class="colorscode">p</span> style = "<span class="colorscode">font-family: </span> Tahoma;"<span class="colorscode">font-size: </span>12px;><br>
+							Bu 12 piksel Tahoma yazı tipi ile yazıldı.<br>
+							<<span class="colorscode">/p</span>>
+						</div>	
+					</div>
+				</div>
+				
+			</div>
+			<p>Size tavsiye edeceğimiz kullanım yolu 1 numaralı maddede anlattığımız harici bir dosya kullanmanızdır.</p>
+		</div>
+	</div>
+</body>
+</html>

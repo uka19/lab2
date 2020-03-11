@@ -1,0 +1,82 @@
+body{
+	background-color: #201f24;
+}
+h1{
+	font-family: myFont;
+	color: white;
+	letter-spacing: 15px;
+	font-size: 55px;
+}
+@font-face{
+	font-family: myFont;
+	src: url(font-family/Thasadith-Regular.ttf);
+}
+p{
+	font-family: myFont;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 3px;
+	padding-left: 50px;
+}
+li{
+	letter-spacing: 5px;
+}
+ul{
+	list-style-type: none;
+}
+#featureBorder{
+	margin: auto;
+	width: 85%;
+	height: 250px;
+}
+#border{
+	width: 100%;
+	height: 250px;
+}
+#uka{
+	width: 30px;
+	height: 50px;
+	padding: 5px;
+}
+#header{
+	border-style: none none solid none;
+	border-width: 2px;
+	border-color: black;
+}
+#mainimage{
+	padding: 100px;
+	padding-left: 50px;
+}
+.feature{
+	float: left;
+	font-family: myFont;
+	color: white;
+	border-style: none solid none none;
+	padding: 55px;
+	
+}
+.feature1{
+	padding: 55px;
+	float: left;
+	font-family: myFont;
+	color: white;
+}
+#cpu{
+	width: 250px;
+	height: 250px;
+	padding-left: 50px;
+}
+#cpubox{
+	padding-top: 50px;
+	height: 250px;
+	margin: 100px;
+}
+.cpufeature{
+	float: left;
+	margin: 50px;
+}
+#gpu{
+	width: 250px;
+	height: 250px;
+	padding-left: 50px;
+}

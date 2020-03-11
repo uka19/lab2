@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uka Code</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "header">
+		<div class="headerbar">
+			<img id="uka" src="images/uka.png">
+		</div>
+		<div class="headerbar">
+			<ul>
+				<li class="navbutton"><a class="headbutton" href="lab4.html">Anasayfa</a></li>
+				<li class="navbutton"><a class="headbutton" href="lab4.html">CSS</a></li>
+				<li class="navbutton"><a class="headbutton" href="">Hakkında</a></li>
+			</ul>
+		</div>	
+	</div>
+	<div id="content">
+		<div class="main nav">
+			<h1 align="center">Css Konuları</h1>
+			<div class="issues" align="center">
+				<a class="issuesbutton"href="lab4-giris.html">CSS Giriş</a>
+			</div>
+			<div class="issues choose" align="center">
+				<a class="issuesbutton choose" href="lab4-ClassAndId.html">CSS ID ve Class</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="lab4-howAdd.html">CSS Nasıl Eklenir?</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">CSS Arkaplanlar(yakında)</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">CSS Yazılar(yakında)</a>
+			</div>
+			<div class="issues" align="center">
+				<a class="issuesbutton" href="">Bağlantılar(yakında)</a>
+			</div>
+		</div>
+		<div class="main content">
+			<h1>Css ID ve Class Seçimi</h1>
+			<p>HTML elementleri için stiller belirleyebildiğiniz gibi size özel stiller belirleyip elementlerin "id" ve "class" özelliklerinde bu stili belirterek de kullanabilirsiniz.</p>
+			<h2>Class Kullanımı</h2>
+			<p>Bir HTML kaynağına baktığınızda bir element (tag) özelliği olarak class="stil" şeklinde bir özellik belirtildiğini görebilirsiniz. Peki neden buna gerek duymuşlar? Örneğin aşağıdaki HTML kodunu inceleyelim:</p>
+			<div>
+				<h2>Css Örneği</h2>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<span><</span><span class="colorscode">div</span><span> class = "still"></span><span>Hoş Geldiniz!</span>
+							<span><</span><span class="colorscode">/div</span><span>></span>
+						</div>
+					</div>
+				</div>
+				<p>Yukarıdaki div elementi içinde yer alan class="stil", o div elementi için CSS özellikleri belirtmemizi sağlayan bir yoldur. CSS dosyamızda şu şekilde bir ifade varsa:</p>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<span class="colorscode">.stil</span> { <br>
+							<span class="colorscode"> font</span>:<span>10pt Tahoma, Verdana</span><br>
+							<span class="colorscode">color</span>:<span>blue</span><br>}
+						</div>	
+					</div>
+				</div>
+				<p>Nokta (.) ile başlayan bir stil oluşturduk ve adını biz verdik. Bu demektir ki class="stil" ile belirttiğimiz tüm elementler 10 punto Tahoma yazı tipinde ve mavi (blue) renginde olacaktır. Tabi istersek sadece tek bir elementte geçerli olmasını sağlayabiliriz. Örneğin sadece DIV elementlerinde geçerli olmasını istiyorsak:</p>
+				<div class="codeblock">
+					<h3>Css kodu</h3>
+					<div class="code">
+						<div class="codepos">
+							<span class="colorscode">div.stil</span> { <br>
+							<span class="colorscode"> font</span>:<span>10pt Tahoma, Verdana</span><br>
+							<span class="colorscode">color</span>:<span>blue</span><br>}
+						</div>	
+					</div>
+				</div>
+				<p>".stil" yani seçim adımızın başına div getirmemiz yeterli olacaktır. Bu durumda bu CSS kodu sadece DIV elementlerinde kullanılabilir olacaktır.</p>
+				<p>CLASS özelliği kullanmanın bize sağlayacağı yararlara şöyle bir bakalım:</p>
+				<div class="ulblock">
+					<div class="ulpos">
+						<ul>
+							<li>Kendimizin adlandırdığı özel stiller yaratmak ve kullanmak</li>
+							<li>Bir stili birden fazla elementte kullanabilmek</li>
+							<li>Stillere CSS de yer verip HTML kodlarımızı sürekli tekrarlanan uzun CSS kodlarından arındırmak</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<h2>ID Kullanımı</h2>
+			<p>ID özelliği ile de stiller yaratabiliriz. CLASS'tan farklı yanları:</p>
+			<div class="ulblock">
+				<div class="ulpos">
+					<ul>
+						<li>Sadece tek bir elementte kullanılabilir.</li>
+						<li>Aynı id değeri iki elemente verilemez (Her id sadece tek bir elementte kullanılabilir).</li>
+						<li>Stil dosyamızda CLASS'da . (nokta) kullanırdık, ancak id özelliğine göre stilleme yapacaksak # (diyez) kullanırız.</li>
+					</ul>
+				</div>
+			</div>
+			<p>Şimdi bu anlattıklarımızı örnek üzerinde görelim:</p>
+			<div class="codeblock">
+				<h3>Css kodu</h3>
+				<div class="code">
+					<div class="codepos">
+						<span><</span><span class="colorscode">div</span><span> id = "stil"></span>Hos Geldiniz<span><</span>
+						<span class="colorscode">/div</span>>	
+					</div>	
+				</div>
+			</div>
+			<p>Örnekte ID değeri "stil" olan bir DIV elementi görüyoruz. CSS dosyamızda bu elemente özel stil tasarlarken aşağıdaki şekilde kod yapısını oluşturmalıyız:</p>
+			<div class="codeblock">
+				<h3>Css kodu</h3>
+				<div class="code">
+					<div class="codepos">
+						<span class="colorscode">#stil </span>{<br>
+						<span class="colorscode">font: </span><span>10pt Tahoma, Verdana;</span><br>
+						<span class="colorscode">color: </span><span>blue;</span><br>}	
+					</div>	
+				</div>
+			</div>
+			<p>Görüldüğü gibi bu kez diyez (#) ile başlattık. Sadece tek bir elemente özel stil tasarlamış olduk (Neden? Çünkü başka bir elementte yine id değeri "stil" belirtilemez.)</p>
+			<p>Ayrıca unutmadan söyleyelim hiçbir ID değeri rakamla başlamaz. ID, HTML dosyasında o elementi bulmamızı sağlar, bu nedenle aynı ismi veremeyiz. Aynı ismi vermemizin diğer yaratacağı sorun Java Script'te bu elementi id özelliğine göre kullanamamak olacaktır. Son olarak bazı tarayıcılar birden fazla aynı id kullanılan HTML dosyalarında stilleri görmezden gelebilir.</p>
+		</div>
+	</div>
+</body>
+</html>

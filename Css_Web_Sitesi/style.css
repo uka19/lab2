@@ -1,0 +1,145 @@
+@font-face{
+	font-family: myFont;
+	src: url(font-family/Thasadith-Regular.ttf);
+}
+li{
+	font-family: myFont; 
+	font-size: 25px;
+}
+h1,h2,h3{
+	font-family: myFont;
+	color:black;
+	text-align: center;
+}
+p{
+	font-family: myFont;
+	color:black;
+	text-align: center;
+	font-size: 25px;
+}
+.issuesbutton{
+	font-family: myFont;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+.headbutton{
+	letter-spacing: 1px;
+	font-family: myFont;
+	color: white;
+	text-decoration:none;
+}
+#header{
+	width: 100%;
+	height: 75px;
+	background-color: black;
+	border-radius: 15px;
+	border-style: solid
+}
+.headerbar{
+	float: left;
+	display: block;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+}
+#content{
+	width: 100%;
+	height: 500px;
+	margin-top:5px;
+}
+.navbutton{
+	float: left;
+	margin-left: 25px;
+}
+#uka{
+	width: 65px;
+	height: 50px;
+}
+.main{
+	float: left;
+	margin-left: 2%;
+}
+.main.nav{
+	width: 20%;
+	border-radius: 15px;
+	height: auto;
+	border-style: solid;
+}
+.main.content{
+	width: 75%;
+	height: auto;
+	margin-left: 5px;
+	border-style: solid;
+	border-radius: 15px;
+	
+}
+.issues{
+	margin: auto;
+	border-style: none none solid none;
+	margin: 25px;
+} 
+.issues:hover{
+	background-color: gray;
+	text-decoration-color: white;
+	border-radius: 5px;
+	color: white;
+}
+
+.issues.choose{
+	background-color: black;
+}
+.issuesbutton.choose{
+	color: white;
+}
+.codeblock{
+	width: 55%;
+	height: auto+5px;
+	border-radius: 15px;
+	margin: auto;
+	background-color: gray;
+}
+.code{
+	width: 85%;
+	height: auto;
+	margin:auto;
+	border-radius: 15px;
+	border-style: solid;
+	background-color: white;
+}
+.colorscode{
+	color: red;
+}
+.aciklamasatiri{
+	color: orange;
+}
+.imageyapi{
+	width: auto;
+	height: auto;
+}
+.codepos{
+	width: 250px;
+	
+	margin-right: auto;
+	margin-left: auto;
+}
+#imgpos{
+	width: 500px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.ulblock{
+	width: auto;
+	height: auto;
+}
+.ulpos{
+	width: 1000px;
+	height: 150px;
+	margin: auto;
+}
+.pagelink{
+	text-decoration: none; 	
+
+}
